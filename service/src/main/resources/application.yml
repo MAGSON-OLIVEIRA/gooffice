@@ -4,15 +4,12 @@ server:
     context-path: /v1
 
 spring:
-  profiles:
-    active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/gooffice?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123 # admin12345
     typ: com.zaxxer.hikari.HikariDataSource
-
 
 logging:
   level:
